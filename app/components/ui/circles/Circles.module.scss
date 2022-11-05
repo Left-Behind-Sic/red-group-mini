@@ -1,6 +1,6 @@
 .circles {
 	> div {
-		@apply absolute;
+		@apply absolute #{!important};
 		width: 400px;
 		height: 400px;
 		animation: cirleAnim 5s infinite ease-in-out;

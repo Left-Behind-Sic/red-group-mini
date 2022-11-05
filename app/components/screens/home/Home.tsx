@@ -1,8 +1,6 @@
-import axios from "axios";
 import React from "react";
-import { API_URL } from "../../../constants";
-import { ILinks } from "../../../interfaces/ILinks";
-import { IMe } from "../../../interfaces/IMe";
+import {ILinks} from "../../../interfaces/ILinks";
+import {IMe} from "../../../interfaces/IMe";
 import Circles from "../../ui/circles/Circles";
 import MetaTitle from "../../ui/MetaTitle";
 import AboutMe from "./about-me/AboutMe";

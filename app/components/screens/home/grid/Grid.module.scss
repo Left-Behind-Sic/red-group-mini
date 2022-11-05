@@ -1,42 +1,42 @@
 @import '../../../../assets/styles/media';
 
 .grid {
-	@apply flex flex-wrap mt-6 mb-10;
+	@apply flex flex-wrap mt-6 mb-10 #{!important};
 	gap: 1rem;
 	@include media(tablet) {
-		@apply mt-4 mb-6;
+		@apply mt-4 mb-6 #{!important};
 	}
 
 	.item {
-		@apply relative;
+		@apply relative #{!important};
 		flex: 1 1 calc((100% / 4) - 2rem);
 		@include media(tablet) {
 			flex: 1 1 calc((100% / 2) - 2rem);
 		}
 
 		.gradient {
-			@apply flex justify-center items-center h-32 rounded-tl-layout rounded-br-layout border-primary border border-solid relative z-10;
+			@apply flex justify-center items-center h-32 rounded-tl-layout rounded-br-layout border-primary border border-solid relative z-10 #{!important};
 			transition: 0.5s;
 			background-size: 200% auto;
 		}
 
 		&:hover {
 			.gradient {
-				@apply rounded-tl-none rounded-br-none rounded-bl-layout rounded-tr-layout;
+				@apply rounded-tl-none rounded-br-none rounded-bl-layout rounded-tr-layout #{!important};
 				box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 				background-position: right center;
 			}
 
 			> div:nth-child(3) {
-				@apply hidden;
+				@apply hidden #{!important};
 			}
 		}
 
 		.title {
-			@apply text-white opacity-80 font-medium mt-2 mb-1;
+			@apply text-white opacity-80 font-medium mt-2 mb-1 #{!important};
 			font-size: 1.09rem;
 			@include media(tablet) {
-				@apply mb-0;
+				@apply mb-0 #{!important};
 				font-size: 1rem;
 			}
 		}

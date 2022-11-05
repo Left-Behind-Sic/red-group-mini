@@ -1,24 +1,24 @@
-@import '../../../../assets/styles/media';
+@import "../../../../assets/styles/media";
 
 .me {
-	@apply mt-40 mb-6 text-center bg-zinc-900 relative;
+	@apply mt-40 mb-6 text-center bg-zinc-900 relative #{!important};
 	@include media(laptop) {
-		@apply mt-28;
+		@apply mt-28 #{!important};
 	}
 	@include media(tablet) {
-		@apply mt-20 mb-4;
+		@apply mt-20 mb-4 #{!important};
 	}
 	@include media(mobile) {
-		@apply mt-16 mb-3;
+		@apply mt-16 mb-3 #{!important};
 	}
 
 	.image-wrapper {
-		@apply mb-6;
+		@apply mb-6 #{!important};
 		@include media(tablet) {
-			@apply mb-4;
+			@apply mb-4 #{!important};
 		}
 		@include media(mobile) {
-			@apply mb-2;
+			@apply mb-2 #{!important};
 		}
 
 		> span {
@@ -35,23 +35,23 @@
 		}
 
 		.image {
-			@apply rounded-full;
+			@apply rounded-full #{!important};
 		}
 	}
 
 	.heading {
-		@apply mb-5 text-3xl font-semibold text-white;
+		@apply mb-5 text-3xl font-semibold text-white #{!important};
 		@include media(tablet) {
-			@apply text-2xl mb-4;
+			@apply text-2xl mb-4 #{!important};
 		}
 		@include media(mobile) {
-			@apply mb-2 text-2xl;
+			@apply mb-2 text-2xl #{!important};
 		}
 
 		> span {
-			@apply mr-2;
+			@apply mr-2 #{!important};
 			@include media(mobile) {
-				@apply mr-1;
+				@apply mr-1 #{!important};
 			}
 		}
 	}

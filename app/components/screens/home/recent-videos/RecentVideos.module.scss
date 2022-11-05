@@ -1,59 +1,59 @@
 @import '../../../../assets/styles/media';
 
 .wrapper {
-	@apply bg-zinc-900 p-3 text-white flex items-center flex-wrap;
-	min-height: 70px;
-	@include media(tablet) {
-		@apply p-2;
-	}
+  @apply bg-zinc-900 p-3 text-white flex items-center flex-wrap #{!important};
+  min-height: 70px;
+  @include media(tablet) {
+    @apply p-2 #{!important};
+  }
 
-	.heading {
-		@apply text-white text-lg inline-block mr-6;
-		@include media(laptop) {
-			@apply mr-4;
-		}
-		@include media(tablet) {
-			@apply text-center mr-0 w-full mb-2 text-xl;
-			> span {
-				@apply hidden;
-			}
-		}
-	}
+  .heading {
+    @apply text-white text-lg inline-block mr-6 #{!important};
+    @include media(laptop) {
+      @apply mr-4 #{!important};
+    }
+    @include media(tablet) {
+      @apply text-center mr-0 w-full mb-2 text-xl #{!important};
+      > span {
+        @apply hidden #{!important};
+      }
+    }
+  }
 }
 
 .item {
-	@apply flex items-center bg-bgColor hover:bg-black transition-colors py-2 px-3 animate-fade duration-300 ease-in-out;
-	width: 40%;
+  @apply flex items-center bg-bgColor hover:bg-black transition-colors py-2 px-3 animate-fade duration-300 ease-in-out #{!important};
+  width: 40%;
 
-	@include media(laptop) {
-		@apply py-1 px-2;
-		width: 37%;
-	}
+  @include media(laptop) {
+    @apply py-1 px-2 #{!important};
+    width: 37%;
+  }
 
-	@include media(tablet) {
-		@apply py-1 px-2;
-		width: 100%;
+  @include media(tablet) {
+    @apply py-1 px-2 #{!important};
+    width: 100%;
 
-		&:nth-child(2) {
-			@apply mb-3;
-		}
-	}
+    &:nth-child(2) {
+      @apply mb-3 #{!important};
+    }
+  }
 
-	&:last-child {
-		@apply ml-6;
-		@include media(laptop) {
-			@apply ml-4;
-		}
-		@include media(tablet) {
-			@apply ml-0;
-		}
-	}
+  &:last-child {
+    @apply ml-6 #{!important};
+    @include media(laptop) {
+      @apply ml-4 #{!important};
+    }
+    @include media(tablet) {
+      @apply ml-0 #{!important};
+    }
+  }
 
-	> img {
-		@apply mr-3;
-	}
+  > img {
+    @apply mr-3 #{!important};
+  }
 
-	> span {
-		@apply text-white truncate;
-	}
+  > span {
+    @apply text-white truncate #{!important};
+  }
 }

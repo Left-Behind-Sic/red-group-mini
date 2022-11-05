@@ -1,8 +1,10 @@
+/** @type {import('tailwindcss').Config} */
+
 const primaryColor = '#FF3850'
 const bgColor = '#111012'
 
 module.exports = {
-	content: ['./pages/**/*.{js,ts,jsx,tsx}', './app/**/*.{js,ts,jsx,tsx}'],
+	content: ['./pages/**/*.{js,ts,jsx,tsx,html}', './app/**/*.{js,ts,jsx,tsx,html}'],
 	theme: {
 		extend: {
 			colors: {

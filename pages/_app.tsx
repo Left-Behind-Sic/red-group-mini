@@ -2,6 +2,7 @@ import "../app/assets/styles/globals.scss";
 import type { AppProps } from "next/app";
 import { QueryClient, QueryClientProvider } from "react-query";
 import Head from "next/head";
+import  "../app/assets/styles/globals.scss"
 
 const queryClient = new QueryClient({
 	defaultOptions: {

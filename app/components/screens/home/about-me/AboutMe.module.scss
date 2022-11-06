@@ -13,7 +13,8 @@
 	}
 
 	.image-wrapper {
-		@apply mb-6 #{!important};
+		@apply mb-6 flex justify-center #{!important};
+		margin-top: -3rem !important;
 		@include media(tablet) {
 			@apply mb-4 #{!important};
 		}
@@ -21,7 +22,7 @@
 			@apply mb-2 #{!important};
 		}
 
-		> span {
+		> img {
 			margin-top: -3rem !important;
 			@include media(tablet) {
 				width: 150px !important;
@@ -40,7 +41,7 @@
 	}
 
 	.heading {
-		@apply mb-5 text-3xl font-semibold text-white #{!important};
+		@apply mb-5 text-3xl font-semibold text-white flex justify-center #{!important};
 		@include media(tablet) {
 			@apply text-2xl mb-4 #{!important};
 		}
